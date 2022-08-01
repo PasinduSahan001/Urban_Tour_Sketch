@@ -1,7 +1,17 @@
 .container {
   padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.map {
+  
+  flex: 1;
 }
 
+.action_button {
+  flex: 1;
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;
