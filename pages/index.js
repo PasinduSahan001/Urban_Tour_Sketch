@@ -13,20 +13,23 @@ export default function Home() {
         <Map/>
         <div className={styles.sub}>
           <div className='row'>
-            <div className={styles.header}>
+            <div className="col-6 text-center mx-auto">
               <div className='logo'>
                 <Image src='/logo.png' width={120} height={120}/>
               </div>  
+            </div>
+            <div className="col-6 text-center mx-auto">
+                <h3>Profile</h3>
             </div>
           </div>
           
           <div className='button'>
             <div className='row'>
-              <div className='col-6'>
-                Ride
+              <div className='col-6 text-center mx-auto d-grid gap-2'>
+                <button type="button" class="btn btn-outline-primary">Ride</button>
               </div>
-              <div className='col-6'>
-                Fuel
+              <div className='col-6 text-center mx-auto d-grid gap-2'>
+                <button type="button" class="btn btn-outline-danger">Fuel</button>
               </div>
             </div>
           </div>
@@ -36,7 +39,6 @@ export default function Home() {
               Any other feature
             </div>
           </div>
-
         </div>
       </div>
     </div>
