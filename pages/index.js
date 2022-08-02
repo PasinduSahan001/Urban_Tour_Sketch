@@ -1,25 +1,41 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import mapboxgl from 'mapbox-gl'
-import { useEffect } from 'react'
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicGFzaW5kdS1zYWhhbiIsImEiOiJjbDZhcWNjZnkxcTZ4M2JuM2EyenljZzNtIn0.1kQi7s34sfJys5XlkCFahw';
+import Map from './Components/map'
 
 export default function Home() {
-  useEffect(()=> {
-    const map = new mapboxgl.Map({
-    container: 'map', 
-    style: 'mapbox://styles/mapbox/streets-v11', 
-    center: [79.890000, 6.911970], 
-    zoom: 12, 
-    projection: 'globe' 
-    });
-  })
   return (
-    <div className={styles.container}>
-      <div className={styles.map} id='map'>Map</div>
-      <div className={styles.action_button}>Buttons</div>
+    <div>
+      <h3>URBAN TOUR</h3>
+
+      <div className={styles.container}>
+        <Map/>
+        <div className={styles.sub}>
+          <div className={styles.header}>
+            Image , Profile
+          </div>
+
+          <div className='button'>
+            <div className='row'>
+              <div className='col-6'>
+                Ride
+              </div>
+              <div className='col-6'>
+                Fuel
+              </div>
+            </div>
+          </div>
+
+          <div className='search'>
+            <div className='row'>
+              Any other feature
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+    
   )
 }

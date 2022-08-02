@@ -5,13 +5,21 @@
   flex-direction: column;
 }
 .map {
-  
   flex: 1;
 }
 
-.action_button {
+.sub {
   flex: 1;
 }
+
+.header{
+  margin-top: 1%;
+  height: 10%;
+  width: 20%;
+}
+
+
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;

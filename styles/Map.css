@@ -14,10 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
-/* ___________________________________________ */
 
-
+.container {
+  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .map {
-  margin-top: 3%;
   flex: 1;
+}
+
+.action_button {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }
