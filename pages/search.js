@@ -8,7 +8,7 @@ const Search = () => {
         <div className='row'>
             <div className={styles.back_button}>
             <Link href="/">
-                <a class="btn btn-primary" href="#" role="button">Back</a>
+                <a className="btn btn-primary" href="#" role="button">Back</a>
             </Link>
         </div>
         <div className='row mt-4'>
