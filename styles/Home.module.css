@@ -42,7 +42,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
@@ -51,9 +51,9 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  margin: 0rem 0;
+  line-height: 0;
+  font-size: 0rem;
 }
 
 .code {
@@ -70,38 +70,73 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .card {
   margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+  padding: 3rem;
+  text-align: center;
+  color: #191a1b;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 2px solid #272323;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
+  color: #0d0d0e;
   border-color: #0070f3;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: Liberation Mono;
+  color: #1ea78d;
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+  padding: 1rem;
+  text-align: left;
 }
+
+.card button {
+  background-color: #1ea78d;
+  color: white;
+  padding: 6px 5px;
+  font-size: 1rem;
+  margin: 8px 0;
+  border: line;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+ .card input[type=text] {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.card input[type=password]{
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
 
 .logo {
   height: 1em;
