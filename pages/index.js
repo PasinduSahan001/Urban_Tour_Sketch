@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
 import Map from './Components/Map'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -26,7 +26,9 @@ export default function Home() {
           <div className='button'>
             <div className='row'>
               <div className='col-6 text-center mx-auto d-grid gap-2 mt-4'>
-                <button type="button" className="btn btn-outline-primary">Ride</button>
+                <Link href="/search">
+                  <button type="button" className="btn btn-outline-primary">Ride</button>
+                </Link>
               </div>
               <div className='col-6 text-center mx-auto d-grid gap-2 mt-4'>
                 <button type="button" className="btn btn-outline-danger">Fuel</button>
