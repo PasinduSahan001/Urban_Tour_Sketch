@@ -26,10 +26,10 @@ export default function Home() {
           <div className='button'>
             <div className='row'>
               <div className='col-6 text-center mx-auto d-grid gap-2'>
-                <button type="button" class="btn btn-outline-primary">Ride</button>
+                <button type="button" className="btn btn-outline-primary">Ride</button>
               </div>
               <div className='col-6 text-center mx-auto d-grid gap-2'>
-                <button type="button" class="btn btn-outline-danger">Fuel</button>
+                <button type="button" className="btn btn-outline-danger">Fuel</button>
               </div>
             </div>
           </div>
