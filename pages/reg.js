@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Formik, Field, Form } from 'formik';
 import React from 'react'
+import Link from 'next/link'
   
 export default function reg() {
     return (
@@ -51,7 +52,9 @@ export default function reg() {
                           <button type="submit">Sign-up</button>
                       </Form>
                       </Formik>
-                
+                      <br></br>
+                      
+                      <u>Go</u><Link href="/"><a><u>Back</u></a></Link>
                        </p>
                     </a>
                  

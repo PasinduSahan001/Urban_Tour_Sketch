@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Formik, Field, Form } from 'formik';
 import Link from 'next/link'
+import React from 'react'
 
 export default function Home() {
   return (
