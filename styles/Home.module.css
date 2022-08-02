@@ -12,6 +12,11 @@
   flex: 1;
 }
 
+.body{
+  background-color: rgb(34, 34, 34);
+  color: #eaeaea;
+}
+
 .header{
   margin-top: 1%;
   height: 10%;

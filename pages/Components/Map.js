@@ -10,7 +10,7 @@ const Map = () => {
     style: 'mapbox://styles/mapbox/streets-v11', 
     center: [79.890000, 6.911970], 
     zoom: 12, 
-    projection: 'globe' 
+    // projection: 'globe' 
     });
   })
 
