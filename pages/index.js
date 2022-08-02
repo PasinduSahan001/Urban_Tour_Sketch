@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import Map from './Components/map'
+import Map from './Components/Map'
 
 export default function Home() {
   return (
@@ -12,10 +12,14 @@ export default function Home() {
       <div className={styles.container}>
         <Map/>
         <div className={styles.sub}>
-          <div className={styles.header}>
-            Image , Profile
+          <div className='row'>
+            <div className={styles.header}>
+              <div className='logo'>
+                <Image src='/logo.png' width={120} height={120}/>
+              </div>  
+            </div>
           </div>
-
+          
           <div className='button'>
             <div className='row'>
               <div className='col-6'>
