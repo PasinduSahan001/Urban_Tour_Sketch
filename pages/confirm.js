@@ -2,16 +2,21 @@ import React from 'react'
 import Map from './Components/Map'
 import styles from '../styles/Confirm.module.css'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const Confirm = () => {
+  const router = useRouter()
+  const {pickup, dropoff} = router.query
+
+  console.log("Pickup: ", pickup)
+  console.log("dropoff: ", dropoff)
 
   const [pickup_cordinates, set_pickup_cordinates] = useState()
   const [dropoff_cordinates, set_dropoff_cordinates] = useState()
 
 
-  const get_pickup_cordinates = () => {
-    const pickup_location = "Kottawa";
-    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${pickup_location}.json?` + 
+  const get_pickup_cordinates = (pickup) => {
+    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${pickup}.json?` + 
       new URLSearchParams({
         access_token: "pk.eyJ1IjoicGFzaW5kdS1zYWhhbiIsImEiOiJjbDZhcWNjZnkxcTZ4M2JuM2EyenljZzNtIn0.1kQi7s34sfJys5XlkCFahw",
         limit: 1
@@ -24,9 +29,8 @@ const Confirm = () => {
     })
   }
 
-  const get_dropoff_cordinates = () => {
-    const dropoff_location = "Padukka";
-    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${dropoff_location}.json?` + 
+  const get_dropoff_cordinates = (dropoff) => {
+    fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${dropoff}.json?` + 
       new URLSearchParams({
         access_token: "pk.eyJ1IjoicGFzaW5kdS1zYWhhbiIsImEiOiJjbDZhcWNjZnkxcTZ4M2JuM2EyenljZzNtIn0.1kQi7s34sfJys5XlkCFahw",
         limit: 1
@@ -40,9 +44,9 @@ const Confirm = () => {
   }
 
   useEffect(()=> {
-    get_pickup_cordinates();
-    get_dropoff_cordinates();
-  },[])
+    get_pickup_cordinates(pickup);
+    get_dropoff_cordinates(dropoff);
+  },[pickup, dropoff])
 
   return (
     <div className={styles.body}>
