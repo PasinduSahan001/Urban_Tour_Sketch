@@ -12,9 +12,18 @@ const Map = () => {
     zoom: 12, 
     // projection: 'globe' 
     });
+    add_to_map(map)
+    
   })
 
-    return <div className='map' id='map'>Map</div>
+  const add_to_map = (map) => {
+    const marker1 = new mapboxgl.Marker()
+    .setLngLat([79.89, 7.0])
+    .addTo(map)
+  }
+
+
+  return <div className='map' id='map'>Map</div>
    
 }
 
