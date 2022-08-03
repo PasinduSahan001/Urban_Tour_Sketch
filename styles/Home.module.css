@@ -82,7 +82,7 @@
   border: 2px solid #272323;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .card:hover,
@@ -97,6 +97,7 @@
   font-size: 1.8rem;
   font-family: Liberation Mono;
   color: #1ea78d;
+  text-decoration: underline;
 }
 
 .card p {

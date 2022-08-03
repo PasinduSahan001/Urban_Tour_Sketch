@@ -5,7 +5,7 @@ import { Formik, Field, Form } from 'formik';
 import Link from 'next/link'
 import React from 'react'
 
-export default function Home() {
+export default function HW() {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,45 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h4 className={styles.title}>
-          Welcome to Urban-Tour
-        </h4>
-
-        <p className={styles.description}>
-         
-        </p>
-
-        <div className={styles.grid}>
-          <a className={styles.card}>
-            <h2>Sign-in</h2>
-            
-            <p> 
-            <Formik
-            initialValues={{
-                username: '',
-                password: '',
-            }}
-
-            onSubmit={() => {
-
-            }}
-           >
-            <Form>
-                <label >Email</label>
-                <input type="text" id="username" name="username"/><br></br>
-                <label >Password</label>
-                <input type="password" id="password" name="password" /><br></br>
-                <button type="submit">Sign-in</button>
-                Forgot <a href="#"><u>password?</u></a>
-            </Form>
-            
-        </Formik><br></br>
-
-        ** Need an account?? <Link href="/reg"><a><u>SIGN-UP</u></a></Link>
-        </p>
-          </a> 
-
-        </div>
+      <Link href="/signin"><a><u>signin</u></a></Link>
       </main>
 
       <footer className={styles.footer}>

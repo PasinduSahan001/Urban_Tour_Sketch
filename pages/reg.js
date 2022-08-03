@@ -16,7 +16,7 @@ export default function reg() {
   
         <main className={styles.main}>
           <h4 className={styles.title}>
-            Welcome to Urban-Tour
+            Welcome to Urban-Tour Registration.
           </h4>
   
           <p className={styles.description}>
@@ -25,7 +25,7 @@ export default function reg() {
   
           <div className={styles.grid}>
                     <a className={styles.card}>
-                      <h2>Please fill in this form to create an account.</h2>
+                      <h2>In order to create an Urban Tour account, please fill out this form.</h2>
                       <p>
                     <Formik
                       initialValues={{
@@ -48,13 +48,11 @@ export default function reg() {
                           <input type="password"  id="password" name="password"  /><br></br>
                           <label >Re-Enter-Password</label>
                           <input type="password" id="repassword" name="repassword"  /><br></br>
-                          ** By creating an account you agree to our <u>Terms & Privacy.</u>
                           <button type="submit">Sign-up</button>
                       </Form>
                       </Formik>
-                      <br></br>
-                      
-                      <u>Go</u><Link href="/"><a><u>Back</u></a></Link>
+                      ** By creating an account you agree to our <u>Terms & Privacy.</u><br></br>
+                      ** Need To <Link href="/signin" ><a><u> SIGN-IN </u>&#9756;</a></Link>
                        </p>
                     </a>
                  
