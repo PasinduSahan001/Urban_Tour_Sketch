@@ -15,10 +15,10 @@ export default function Home() {
           <li><a href=""></a></li>
           <li><a href="">Login</a></li>
           <li><a href="">Settings</a></li>
-          <li><a class="active" href="">Notification</a></li>
+          <li><a href="">Notification</a></li>
           <li><a href="">Your-Earning</a></li>
           <li><a href="">Fuel</a></li>
-          <li><a href="">Profile-Overveiw</a></li>
+          <li><a class="active" href="">Profile-Overveiw</a></li>
 
         </ul>
         </div>
