@@ -3,6 +3,8 @@ import Map from './Components/Map'
 import styles from '../styles/Confirm.module.css'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import RideSelector from './Components/RideSelector'
+
 
 const Confirm = () => {
   const router = useRouter()
@@ -52,10 +54,25 @@ const Confirm = () => {
     <div className={styles.body}>
       <div className={styles.container}>
         <Map pickup_cordinates={pickup_cordinates} dropoff_cordinates = {dropoff_cordinates}/>
+        <hr/>
         <div className={styles.ride_container}>
-          Ride selector
-          {pickup_cordinates}
-          {dropoff_cordinates}
+          <div className='row'>
+            <div className='text-center'>
+              Details {pickup} to {dropoff} trip
+              <hr/>
+            </div>
+          </div>
+
+          <div className='row'>
+            <div className={styles.ride_selector}>
+              <RideSelector/>
+            </div>
+          </div>
+
+          <div className='row'>
+            <button type="button" className="btn btn-outline-primary">Confirm Ride</button>
+          </div>
+          
         </div>
       </div>
     </div>
