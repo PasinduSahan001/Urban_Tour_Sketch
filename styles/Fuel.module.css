@@ -1,0 +1,23 @@
+.body {
+  background-color: rgb(34, 34, 34);
+  color: #2fdb11;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  flex: 1;
+}
+
+.sub {
+  flex: 1;
+  color: #2fdb11;
+}
+
+
