@@ -18,7 +18,7 @@ export default function Home() {
           <li><a href="">Notification</a></li>
           <li><a href="">Your-Earning</a></li>
           <li><a href="">Fuel</a></li>
-          <li><a class="active" href="">Profile-Overveiw</a></li>
+          <li><a className="active" href="">Profile-Overveiw</a></li>
 
         </ul>
         </div>
