@@ -5,19 +5,19 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGFzaW5kdS1zYWhhbiIsImEiOiJjbDZhcWNjZnkxcTZ4M
 
 const Map = (props) => {
   //console.log(props)
-  useEffect(()=> {
+  useEffect(() => {
     const map = new mapboxgl.Map({
-      container: 'map', 
-      style: 'mapbox://styles/mapbox/streets-v11', 
-      center: [79.890000, 6.911970], 
-      zoom: 12, 
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [79.890000, 6.911970],
+      zoom: 12,
     });
 
-    if (props.pickup_cordinates){
+    if (props.pickup_cordinates) {
       add_to_map(map, props.pickup_cordinates)
     }
 
-    if (props.dropoff_cordinates){
+    if (props.dropoff_cordinates) {
       add_to_map(map, props.dropoff_cordinates)
     }
 
@@ -29,17 +29,29 @@ const Map = (props) => {
         padding: 60
       })
     }
-    
-  },[props.pickup_cordinates, props.dropoff_cordinates])
+
+    add_control()
+
+  }, [props.pickup_cordinates, props.dropoff_cordinates])
 
   const add_to_map = (map, cordinates) => {
     const marker1 = new mapboxgl.Marker()
-    .setLngLat(cordinates)
-    .addTo(map)
+      .setLngLat(cordinates)
+      .addTo(map)
   }
 
+  const add_control = () => {
+    const maps = new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    })
+  }
+
+
   return <div className='map' id='map'>Map</div>
-   
+
 }
 
 
