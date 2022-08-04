@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import React from 'react'
 
-export default function Home() {
+export default function hj() {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,43 +14,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to Urban Tour
-        </h1>
+      <Link href="/fuel"><a><u>fuel</u></a></Link>
 
-
-
-        <div className={styles.grid}>
-          <a className={styles.card}>
-            <h2>Morotuwa IOC Filling station</h2>
-            <p className={styles.loopp}>Available Fuel Types</p>
-            <div>
-            <ul>
-              <li><button>P92</button></li>
-              <li><button>P95</button></li>
-              <li><button>D</button></li>
-              <li><button>SD</button></li>
-            </ul>   
-            </div>
-              <hr/>
-            
-            <p className={styles.loopp}>Fuel volume for the day <br></br>2022/08/03</p>
-
-            <div>
-              <label>Petrol-92 :</label>
-              <a className={styles.barr}> 250L</a> <br></br>
-              <label>Petrol-95 :</label>
-              <a  className={styles.barr}> 250L</a><br></br>
-              <label>Diesel :</label>
-              <a  className={styles.barr}> 250L</a><br></br>
-              <label>Super-Diesel :</label>
-              <a  className={styles.barr}> 250L</a><br></br>
-            </div>
-            <hr/>
-          <button className={styles.hjk}>Book Time Slot!</button>
-
-          </a> 
-        </div>
       </main>
 
       <footer className={styles.footer}>

@@ -18,13 +18,13 @@
 }
 
 .hjk{
-  background-color: #0070f3;
+  background-color: #04AA6D;
   border: 1px;
   color: white;
   padding: 10px 45px;
   text-align: center;
   font-size: 18px;
-  align-items: center;
+  
   justify-content: center;
   display: flex;
  
@@ -124,6 +124,12 @@ background-color: rgb(210, 214, 210);
  font-weight: bold;
   
   }
+  
+
+
+
+
+
 
 
 
