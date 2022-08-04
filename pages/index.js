@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+
 import { Formik, Field, Form } from 'formik';
 import Link from 'next/link'
 import React from 'react'
+
+import Map from './Components/Map'
+import Link from 'next/link'
+
 
 export default function HW() {
   return (
@@ -14,16 +19,48 @@ export default function HW() {
         <link rel="icon" href="/tabb.ico" />
       </Head>
 
-      <main className={styles.main}>
-      <Link href="/signin"><a><u>signin</u></a></Link>
-      </main>
+    <div className={styles.body}>
+      <div className='row'>
+        <div className="col-6 text-center mx-auto mt-4">
+          <div className='logo'>
+            <Image src='/logo.png' width={60} height={60}/>
+          </div>  
+        </div>
+        <div className="col-6 text-center mx-auto mt-4">
+          <h3>Profile</h3>
+        </div>
+      </div>
 
-      <footer className={styles.footer}>
+      <div className={styles.container}>
+        <Map/>
+        <div className={styles.sub}>
+          <div className='button'>
+            <div className='row'>
+              <div className='col-6 text-center mx-auto d-grid gap-2 mt-4'>
+                <Link href="/search">
+                  <button type="button" className="btn btn-outline-primary">Ride</button>
+                </Link>
+              </div>
+              <div className='col-6 text-center mx-auto d-grid gap-2 mt-4'>
+                <Link href="/fuel">
+                  <button type="button" className="btn btn-outline-danger">Fuel</button>
+                </Link>
+              </div>
+              <main className={styles.main}>
+                <Link href="/signin"><a><u>signin</u></a></Link>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            <footer className={styles.footer}>
         <a>
           Copyright © 2022. All rights reserved.
                         Designed & developed by GROUP-16
         </a>
       </footer>
+
     </div>
   )
 }

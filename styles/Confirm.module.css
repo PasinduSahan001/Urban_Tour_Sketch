@@ -1,0 +1,24 @@
+.container {
+  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  flex: 1;
+}
+
+.ride_container {
+  flex: 1;
+  flex-direction: column;
+  color: #2fdb11;
+  
+}
+
+.body {
+  background-color: rgb(34, 34, 34);
+  color: #2fdb11;
+}
+
+

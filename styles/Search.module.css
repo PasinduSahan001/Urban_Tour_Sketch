@@ -1,0 +1,26 @@
+.container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #979797;
+  /* width: 50%; */
+  /* margin-left: 10%; */
+  border-radius: 20px;
+}
+
+.body{
+  background-color: rgb(34, 34, 34);
+  color: #f7dede;
+  height: 100vh;
+}
+
+.title {
+  color: rgb(26, 235, 19);
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 5%;
+  border-width: 3px;
+}
+

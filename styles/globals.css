@@ -15,3 +15,21 @@ a {
 * {
   box-sizing: border-box;
 }
+/* ___________________________________________ */
+
+
+.map {
+  margin-top: 3%;
+  flex: 1;
+}
+
+.bicycle_list {
+  background-color: black;
+}
+
+.bicycle_container {
+  display: flex;
+  flex-direction: column;
+  flex : 1
+}
+
