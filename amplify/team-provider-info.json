@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-urbantour-dev-112527-authRole",
+      "UnauthRoleArn": "arn:aws:iam::987769733402:role/amplify-urbantour-dev-112527-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::987769733402:role/amplify-urbantour-dev-112527-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-urbantour-dev-112527-deployment",
+      "UnauthRoleName": "amplify-urbantour-dev-112527-unauthRole",
+      "StackName": "amplify-urbantour-dev-112527",
+      "StackId": "arn:aws:cloudformation:ap-south-1:987769733402:stack/amplify-urbantour-dev-112527/36bb9dd0-1483-11ed-8ef1-0a1621de353a",
+      "AmplifyAppId": "d2ohdhlj29idvg"
+    },
+    "categories": {
+      "auth": {
+        "urbantour227b1ccd": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "urbantour",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authurbantour227b1ccd"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 14,
+        "apiKeyExpirationDate": "2022-08-19T06:03:12.321Z",
+        "keyDescription": "."
+      }
+    ]
+  }
+}

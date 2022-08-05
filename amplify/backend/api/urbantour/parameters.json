@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "urbantour",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authurbantour227b1ccd",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
