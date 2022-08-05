@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 2000px;
 }
 
 .card {
@@ -82,19 +82,29 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 800px;
 }
+
+.card h5 {
+  margin-right: 1rem;
+  color: rgb(12, 19, 12);
+}
+
+
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #0d0d0d;
+  border-color: #010911;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+
 }
 
 .card p {
@@ -108,9 +118,104 @@
   margin-left: 0.5rem;
 }
 
+.lol {
+  color: blue;
+  font-weight: bold;
+}
+
+.loll {
+  color: rgb(6, 6, 6);
+  text-align: center;
+ 
+}
+
+
+
+
+
+
+.stretch-card>.card {
+  width: 100%;
+  min-width: 100%
+}
+
+
+
+.flexx {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto
+}
+
+
+.paddingg {
+  padding: 3rem
+}
+
+
+
+.cardblock {
+ padding: 2rem;
+}
+
+.h6 {
+ font-size: 16px !important;
+}
+
+.textcgreen {
+ color: #2ed8b6;
+}
+
+
+.cardblock progress{
+  position: relative;
+  display: inline-block;
+  background: #eee;
+  height: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 85%;
+  background: rgb(9, 123, 223);
+  animation: progress-animation .7s ease-in forwards;
+}
+
+
+.bgcred {
+ background: #FF5370;
+}
+
+
+.bgcblue {
+ background: #4099ff;
+}
+
+
+
+.bgcgreen {
+ background: #2ed8b6;
+}
+
+.bgcyellow {
+ background: #FFB64D;
+}
+
+
+
+.textcred {
+ color: #FF5370;
+}
+
+
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
+
+
+
+
+
