@@ -1,0 +1,261 @@
+.container {
+    padding: 0 2rem;
+    background-color: rgb(34, 34, 34);
+    color: #fafafa;
+  }
+  
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 240px;
+  }
+  
+  .main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+   
+  }
+  .main li {
+    float: right;
+   
+  }
+  
+  .main li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .main li a:hover {
+    background-color: #04AA6D;
+    
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+   
+  }
+  
+  
+  .sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .sidenav a:hover {
+    background-color: #04AA6D;
+  }
+
+
+
+  .loopp{
+    text-align: center;
+  }
+  
+  .hjk{
+    background-color: #04AA6D;
+    border: 1px;
+    color: white;
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 18px;
+    
+    justify-content: center;
+    display: flex;
+   
+  }
+  
+.grid progress{
+ 
+    position: relative;
+    display: inline-block;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    background: rgb(235, 235, 235);
+    animation: progress-animation .8s ease-in forwards;
+}
+
+
+
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .title a {
+    color: #f30000;
+    text-decoration: none;
+  }
+  
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 3rem;
+  }
+  
+  .title,
+  .description {
+    text-align: center;
+  }
+  
+  .description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  
+  .barr{
+  color: #04AA6D;
+  font-weight: bold;
+  padding: 1rem;
+  justify-content: center;
+  
+  }
+  
+  .code {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+  
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #04AA6D;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 800px;
+  }
+  
+  .card ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 2;
+  overflow: hidden;
+  background-color: rgb(34, 34, 34);
+  }
+  
+  .card label{
+   font-weight: bold;
+   
+  }
+    
+  
+  .card li{
+  float: left;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+  
+  
+  .card li button{
+  background-color: #04AA6D;
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  align-items: center;
+  
+  }
+  
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: white;
+    border-color: #04AA6D;
+  }
+  
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    color: rgb(189, 14, 14);
+    flex: 1;
+    font-weight: bolder;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  

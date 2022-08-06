@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import RideSelector from './Components/RideSelector'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Confirm = () => {
@@ -76,13 +77,25 @@ const Confirm = () => {
 
 
   return (
+    <div className={styles.container}>
+        <div className={styles.sidenav}>
+      <ul>
+          <li><a href="">&#9776;</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/profile">Profile-Overveiw</a></li>
+          <li><a href="">Your-Earning</a></li>
+          <li><a href="/available">Fuel-Quantity</a></li>
+          <li><a href="">Notification</a></li>
+          <li><a href="">Settings</a></li>
+          <li><a href="/signin">Login</a></li></ul>
+          <br></br><br></br><br></br><br></br>
+          <li><a href="/"><Image src='/logo.png' width={50} height={50}/></a></li>
+        </div>
+        
+        <div className={styles.main}>
     <div className={styles.body}>
       <div className='row'>
-        <div className={styles.back_button}>
-          <Link href="/search">
-              <a className="btn btn-primary" href="#" role="button">Back</a>
-          </Link>
-        </div>
+      <h2><b><br></br>-Start Your Journey-</b></h2>
       </div>
       <div className={styles.container}>
         <Map pickup_cordinates={pickup_cordinates} dropoff_cordinates = {dropoff_cordinates}/>
@@ -100,11 +113,17 @@ const Confirm = () => {
           </div>
           <hr/>
           <div className='row mt-4'>
-            <button type="button" className="btn btn-outline-primary">Confirm Ride</button>
+            <button type="button" className="btn btn-outline-primary"><b>&#9055; START! &#9055;</b></button>
+            
+            <Link href="/search">
+            <button type="button" className="btn btn-outline-danger" value="reset"><b>&#128473; CANCEL &#128473;</b></button>
+           </Link>
           </div>
         </div>
       </div>
     </div>
+    </div>
+  </div>
   )
 }
 

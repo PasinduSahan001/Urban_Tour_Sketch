@@ -20,10 +20,11 @@ a {
 .map {
   margin-top: 3%;
   flex: 1;
+  border: 2px solid #ffffff;
 }
 
 .bicycle_list {
-  background-color: black;
+  background-color: rgb(34, 34, 34);
 }
 
 .bicycle_container {

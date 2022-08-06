@@ -4,19 +4,32 @@ import Map from './Components/Map'
 import Link from 'next/link'
 import FuelStationSelector from './Components/FuelStationSelector'
 import VehicleSelector from './Components/VehicleSelector'
+import Image from 'next/image'
+
 
 const Fuel = () => {
-  return (
+  return (  
+    
+      
     <div className={styles.body}>
-      <div className='row pt-4'>
-        <div className='col-10'>
-          <div className={styles.back_button}>
-            <Link href="/">
-              <a className="btn btn-primary" href="#" role="button">Back</a>
-            </Link>
-          </div>
+     <div className={styles.container}>
+        <div className={styles.sidenav}>
+      <ul>
+          <li><a href="">&#9776;</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/profile">Profile-Overveiw</a></li>
+          <li><a href="">Your-Earning</a></li>
+          <li><a href="/available">Fuel-Quantity</a></li>
+          <li><a href="">Notification</a></li>
+          <li><a href="">Settings</a></li>
+          <li><a href="/signin">Login</a></li></ul>
+          <br></br><br></br><br></br><br></br>
+          <li><a href="/"><Image src='/logo.png' width={50} height={50}/></a></li>
         </div>
-        {/* <div className='col-2'>
+        
+        <div className={styles.main}>
+        <h4><b><br></br>Fuel Location</b></h4>
+        { /* <div className='col-2'>
           <div class="btn-group">
             <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               Fuel type
@@ -26,10 +39,11 @@ const Fuel = () => {
               <li><a class="dropdown-item" href="#">Diesel</a></li>
             </ul>
           </div>
-        </div> */}
-      </div>
+        </div> */ }
 
-      <div className={styles.container}>
+      
+
+      
         <Map />
         <div className={styles.sub}>
           <div className='button'>
@@ -47,6 +61,9 @@ const Fuel = () => {
         </div>
       </div>
     </div>
+  </div>
+
+    
   )
 }
 

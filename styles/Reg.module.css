@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 34, 34);
+  color: #fafafa;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 0;
+  padding: 2rem 0;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 0rem 0;
+  line-height: 0;
+  font-size: 0rem;
+}
+
+
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 3rem;
+  text-align: center;
+  color: #04AA6D;
+  text-decoration: none;
+  border: 2px solid #04AA6D;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 500px;
+}
+
+
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+  font-family: Liberation Mono;
+  color: #1ea78d;
+  text-decoration: underline;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 1rem;
+  text-align: left;
+  color: white;
+}
+
+
+.card button {
+  background-color: #1ea78d;
+  color: white;
+  padding: 6px 5px;
+  font-size: 1rem;
+  margin: 8px 0;
+  border: line;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+ .card input[type=text] {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.card input[type=password]{
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
