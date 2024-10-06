@@ -1,7 +1,7 @@
 ![Logo](https://github.com/PasinduSahan001/Resources/blob/e72255b2280698c3477a729df7c0fb27b13bef18/Urban%20Tour/Logo_2-min.png)
 
-## Project Overview
-**Urban_Tour** is a group project developed in 2022 as part of our Cloud Computing - Mini Project module in our degree program. This repository contains the initial UI sketches for the **Urban_Tour** application, developed as a preliminary step before implementing the backend. The goal was to outline the basic design and user flow, providing a visual guide to help shape the project’s development.
+## Overview
+**Urban_Tour** is a group project developed in 2022 as part of our Cloud Computing - Mini Project module in our degree program. This repository contains the **initial UI sketches** for the Urban_Tour application, developed as a preliminary step before implementing the backend. The goal was to outline the basic design and user flow, providing a visual guide to help shape the project’s development.
 
 ### Group Members
 - [@Janith Hettiarachchi](https://github.com/JanithK27)
@@ -21,10 +21,11 @@ The primary purpose of this UI sketch was to:
 - **Navigation Flow:** Initial sketches outlining the navigation between different sections of the application.
 - **User Interaction Elements:** Mockups for buttons, forms, and informational displays.
 
-### Technologies Used
+## Technologies Used
 - **Web Development:** HTML, CSS, JavaScript, Bootstrap, NEXT.js.
 
 ## Installation and Setup
 1. **Install NPM dependencies**: Run `npm install`.
 2. **Run the project**: Run `npm run dev`.
+   
 ---
