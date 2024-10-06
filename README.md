@@ -1,4 +1,4 @@
-![Logo](https://github.com/PasinduSahan001/Resources/blob/e72255b2280698c3477a729df7c0fb27b13bef18/Urban%20Tour/Logo_2-min.png)
+![Logo](https://github.com/PasinduSahan001/Urban_Tour_Frontend_-_Backend_03/blob/38cf0e5f77fe770b285f00f3591f70abde39f18e/Resources_ReadME/Logo_2-min.png)
 
 ## Overview
 **Urban_Tour** is a group project developed in 2022 as part of our Cloud Computing - Mini Project module in our degree program. This repository contains the **initial UI sketches** for the Urban_Tour application, developed as a preliminary step before implementing the backend. The goal was to outline the basic design and user flow, providing a visual guide to help shape the project’s development.
