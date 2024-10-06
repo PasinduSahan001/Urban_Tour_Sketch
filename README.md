@@ -1,32 +1,30 @@
-## Getting Started
+![Logo](https://github.com/PasinduSahan001/Resources/blob/e72255b2280698c3477a729df7c0fb27b13bef18/Urban%20Tour/Logo_2-min.png)
 
-First, run the development server:
+## Project Overview
+**Urban_Tour** is a group project developed in 2022 as part of our Cloud Computing - Mini Project module in our degree program. This repository contains the initial UI sketches for the **Urban_Tour** application, developed as a preliminary step before implementing the backend. The goal was to outline the basic design and user flow, providing a visual guide to help shape the project’s development.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Group Members
+- [@Janith Hettiarachchi](https://github.com/JanithK27)
+- [@Rusitha Thennekoon](https://github.com/Rusitha28)
+- [@MSM.IFFATH HANA](https://github.com/iffathhana)
+- [@Kesara Lakpriya](https://github.com/42Kesara)
+- [@Pasindu_Sahan](https://github.com/PasinduSahan001)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Purpose
+The primary purpose of this UI sketch was to:
+- **Visualize Concepts:** Present a rough layout of the user interface, illustrating key features and functionalities.
+- **User Flow Exploration:** Identify potential user paths and interactions before developing backend integration.
+- **Feedback Gathering:** Collect input from team members to refine the design direction.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Key Features
+- **Basic Layouts:** Draft versions of screens for user registration, bicycle availability, and route planning.
+- **Navigation Flow:** Initial sketches outlining the navigation between different sections of the application.
+- **User Interaction Elements:** Mockups for buttons, forms, and informational displays.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Technologies Used
+- **Web Development:** HTML, CSS, JavaScript, Bootstrap, NEXT.js.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Installation and Setup
+1. **Install NPM dependencies**: Run `npm install`.
+2. **Run the project**: Run `npm run dev`.
+---
